@@ -1,0 +1,687 @@
+
+<!-- saved from url=(0073)file:///C:/Oracle%20Certification/Test%20Score%20Admin%201_files/itd.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript">var vFailedScripts = new Array();</script>
+<script src="./jquery-1.12.3.min.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/jquery-1.12.3.min.js&#39;);"></script>
+<script src="./Prototypes.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/Prototypes.js&#39;);"></script>
+
+<script src="./FirstScripts.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/FirstScripts.js&#39;);"></script>
+<script type="text/javascript">
+var itd = null;
+function SetITDTop(checkWindow) {
+    if (typeof (checkWindow.itd) == "undefined" || checkWindow.itd == null) {
+        if (checkWindow != top) {
+            if (checkWindow.parent != null) {
+                if (typeof (checkWindow.parent.itd) == "undefined" || checkWindow.parent.itd == null)
+                    SetITDTop(checkWindow.parent);
+                checkWindow.itd = checkWindow.parent.itd;
+            }
+            else
+                checkWindow.itd = checkWindow;
+        }
+        else
+            checkWindow.itd = checkWindow;
+    }
+}
+if (window.opener == null || typeof (window.opener.itd) == "undefined")
+    SetITDTop(window);
+else
+    itd = window.opener.itd;
+function ITDDynamicOnLoad() { document.oncontextmenu = function () { try { if(typeof insertComment == 'function') insertComment(); } catch(e) {} return false;}
+ }</script>
+<script src="./Keyblock.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/Keyblock.js&#39;);"></script>
+<style>.ITSSeparator {
+	HTML: "
+
+<HR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+}
+P {
+	MARGIN: 0in 0in 0pt
+}
+BODY {
+	BACKGROUND-COLOR: #ffffff; MARGIN: 0.35in; FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 11pt; scrolltype: normal; scrolldisplay: auto
+}
+
+.shellFocus {
+	BORDER-BOTTOM: black 1px outset; BORDER-LEFT: black 1px outset; BORDER-TOP: black 1px outset; BORDER-RIGHT: black 1px outset
+}
+
+SELECT {}
+
+.zoomList {
+	WIDTH: 100px
+}
+
+.ITSStem {
+	MARGIN-BOTTOM: 30px; VERTICAL-ALIGN: top
+}
+.ITSStemSequence {
+	VERTICAL-ALIGN: top
+}
+.ITSMCOptionLabelText {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 15px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; labeling-scheme: Letter
+}
+.ITSMCOptionLabelTextOn {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 15px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; labeling-scheme: Letter
+}
+.ITSMCOptionLabelSeparator {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 15px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; label-separator: ")&nbsp;"
+}
+.ITSMCOptionLabelSeparatorOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 15px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; label-separator: ")&nbsp;"
+}
+.ITSMCOptionText {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ITSMCOptionTextOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ITSMCOptionTable {
+	PADDING-BOTTOM: 10pt; CURSOR: hand
+}
+.ITSMCOptionTableOn {
+	PADDING-BOTTOM: 10pt; CURSOR: hand
+}
+.ITSMCOptionMarker {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; option-selector: Circle; multiple-option-selector: Box
+}
+.ITSMCOptionMarkerOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; option-selector: Circle; multiple-option-selector: Box
+}
+.ITSMCOptionMarkerCell{PADDING-TOP: 3px;}
+
+.ITSMCRowOptionCell {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+.ITSMCRowOptionCellOn {
+	BORDER-BOTTOM: black solid; BORDER-LEFT: black solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: black solid; BORDER-RIGHT: black solid; PADDING-TOP: 0px
+}
+.ITSMCRowTextCell {
+	BORDER-BOTTOM: medium none; TEXT-ALIGN: center; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+.ITSPageLink {
+	COLOR: darkblue; CURSOR: hand; TEXT-DECORATION: underline
+}
+.ITSPassage {
+	BACKGROUND-COLOR: cornsilk; CURSOR: hand
+}
+.ITSAutoPassage {
+	COLOR: darkblue; FONT-WEIGHT: bold
+}
+.ITSGroupOption {
+	CURSOR: hand
+}
+.ITSGroupOptionOn {
+	BACKGROUND-COLOR: cornsilk; CURSOR: hand
+}
+.ITSLineNumber {
+	TEXT-ALIGN: right; line-numbering: 5
+}
+.ITSMatchingSource {
+	CURSOR: hand
+}
+.ITSMatchingSourceUsed {
+	COLOR: gray; CURSOR: hand
+}
+.ITSMatchingTarget {
+	BORDER-BOTTOM: thin ridge; TEXT-ALIGN: center; WIDTH: 1in; CURSOR: hand
+}
+.CSOLUTION {
+	BACKGROUND-COLOR: #ffffff; COLOR: #0000ff
+}
+.SOLUTION {
+	BACKGROUND-COLOR: #ffffff; COLOR: #0000ff
+}
+.ITSESOptionLabelText {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; labeling-scheme: None
+}
+.ITSESOptionLabelTextOn {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; labeling-scheme: None
+}
+.ITSESOptionLabelSeparator {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; label-separator: ""
+}
+.ITSESOptionLabelSeparatorOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ITSESOptionText {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.ITSESOptionTextOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ITSESOptionTable {
+	CURSOR: hand
+}
+.ITSESOptionTableOn {
+	CURSOR: hand
+}
+.ITSESOptionMarker {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; option-selector: circle; multiple-option-selector: Box
+}
+.ITSESOptionMarkerOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ITSU2Span {
+	BORDER-BOTTOM: #000 1px solid
+}
+.OracleCode {
+	FONT-FAMILY: "Courier New"; FONT-SIZE: 12pt
+}
+.itdstrikeout {
+	COLOR: #a6a6a6; TEXT-DECORATION: line-through
+}
+.itdstrikeout IMG {
+	FILTER: alpha(opacity=25); opacity: 0.25; -moz-opacity: 0.25
+}
+.itdstrikeout TD {
+	COLOR: #484848; TEXT-DECORATION: line-through
+}
+.itdstrikeout TABLE {
+	FILTER: alpha(opacity=39); opacity: 0.39; -moz-opacity: 0.39
+}
+.itdstrikeout SPAN {
+	FILTER: alpha(opacity=39); opacity: 0.39; -moz-opacity: 0.39
+}
+.ITSMCOption {}
+body {background-color: white; color:black}
+.TD {color:black}
+
+
+
+
+
+
+
+
+
+</style>
+<style type="text/css">
+img {
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-user-drag: none;
+user-drag: none;
+}
+</style>
+<script src="./ForceClose.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/ForceClose.js&#39;);"></script>
+<script src="./Images.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/Images.js&#39;);"></script>
+<script src="./Display.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/Display.js&#39;);"></script>
+<script>var vItemType = 'Display';</script>
+<script src="./DisableHighlighting.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/DisableHighlighting.js&#39;);"></script>
+<script type="text/javascript">var searchMe='y';</script>
+
+
+
+	
+	<title>Oracle Info Panel</title>
+	<script>
+function hideInfoPanel() {
+	itd.itdCurrentLocation = "(hideInfoPanelstart)";
+	document.getElementById('table_left').style.visibility = 'hidden';
+	document.getElementById('table_right').style.visibility = 'hidden';
+	itd.itdCurrentLocation = "(hideInfoPanelend)";
+}
+
+function showInfoPanel() {
+	itd.itdCurrentLocation = "(showInfoPanelstart)";
+	document.getElementById('table_bot').style.visibility = 'visible';
+	document.getElementById('table_top').style.visibility = 'visible';
+	itd.itdCurrentLocation = "(showInfoPanelend)";
+}
+
+function setInfoText(text) {
+	itd.itdCurrentLocation = "(setInfoTextstart)";
+	document.getElementById('infotext').innerHTML = text;
+	itd.itdCurrentLocation = "(setInfoTextend)";
+}
+
+function setTitleText(text) {
+	itd.itdCurrentLocation = "(setTitleTextstart)";
+	document.getElementById('titletext').innerHTML = text;
+	itd.itdCurrentLocation = "(setTitleTextend)";
+}
+
+function setItemName(text) {
+	itd.itdCurrentLocation = "(setItemNamestart)";
+	document.getElementById('itemname').innerHTML = text;
+	itd.itdCurrentLocation = "(setItemNamestop)";
+}
+
+function setItemKey(text) {
+	itd.itdCurrentLocation = "(setItemKeystart)";
+	document.getElementById('itemkey').innerHTML = text;
+	itd.itdCurrentLocation = "(setItemKeystop)";
+}
+
+function setMaxSelectMessage(text) {
+	itd.itdCurrentLocation = "(setMaxSelectMessagestart)";
+	document.getElementById('maxselectmessage').innerHTML = text;
+	itd.itdCurrentLocation = "(setMaxSelectMessagestop)";
+}
+
+function toggleTimer() {
+	itd.itdCurrentLocation = "(toggleTimerstart)";
+	var objTimerText = document.getElementById('timertext');
+	
+	if(clockwarning) {
+		objTimerText.style.display = 'inline';
+		return;
+	}
+	
+	if(objTimerText.style.display != 'none') {
+		objTimerText.style.display = 'none';
+	} else {
+		objTimerText.style.display = 'inline';
+	}
+	itd.itdCurrentLocation = "(toggleTimerstop)";	
+}
+
+function toggleInfo() {
+	itd.itdCurrentLocation = "(toggleInfostart)";
+	var objInfoText = document.getElementById('infotext');
+	
+	if(objInfoText.style.display != 'none') {
+		objInfoText.style.display = 'none';
+	} else {
+		objInfoText.style.display = 'inline';
+	}
+	itd.itdCurrentLocation = "(toggleInfostop)";	
+}
+
+var clockwarning = 0;
+
+function setTime(text) {
+	itd.itdCurrentLocation = "(setTimestart)";
+	document.getElementById('timertext').innerHTML = text;
+	itd.itdCurrentLocation = "(setTimestop)";
+} 
+
+function hideTime() {
+	itd.itdCurrentLocation = "(hideTimestart)";
+	document.getElementById('timertext' ).style.visibility = 'hidden';
+	document.getElementById('clock').style.visibility = 'hidden';	
+	document.getElementById('clockon').style.visibility = 'hidden';	
+	document.getElementById('clock').style.display = 'none';	
+	document.getElementById('clockon').style.display = 'none';	
+	itd.itdCurrentLocation = "(hideTimestop)";			
+}
+
+function showTime() {
+	itd.itdCurrentLocation = "(showTimestart)";
+	document.getElementById('timertext' ).style.visibility = 'visible';
+	document.getElementById('timertext' ).style.display = 'inline';
+	document.getElementById('clock').style.visibility = 'visible';
+	itd.itdCurrentLocation = "(showTimestop)";	
+}
+
+function hideInfo() {
+	itd.itdCurrentLocation = "(hideInfostart)";
+	document.getElementById('flagon').style.visibility = 'hidden';	
+	document.getElementById('flag').style.visibility = 'hidden';
+	itd.itdCurrentLocation = "(hideInfostop)";
+}
+
+function showInfo() {
+	itd.itdCurrentLocation = "(showInfostart)";	
+	document.getElementById('flagon').style.visibility = 'visible';	
+	document.getElementById('flag').style.visibility = 'visible';
+	document.getElementById('infotext').style.display = 'inline';
+	itd.itdCurrentLocation = "(showInfoend)";	
+}
+
+var blnTimerOff = false;
+function InitializePage() {
+    itd.itdCurrentLocation = "(InitializePagestart-infopanelframe)";
+	if( (itd.vDeliveryOptions & 131072) == 131072 )
+	{
+		var zoomValue = itd.GetVariable("ZoomValue");
+		var zoomCombo = document.getElementById("ZoomCombo");
+		zoomCombo.style.display = "";
+		if( zoomValue != "" && zoomValue != null )
+			zoomCombo.value = zoomValue;
+	}
+	if( (itd.vDeliveryOptions & 65536) == 65536 )
+	{
+		var uiValue = itd.GetVariable("UIValue");
+		var uiCombo = document.getElementById("UICombo");
+		uiCombo.style.display = "";
+		if( uiValue != "" && uiValue != null )
+			uiCombo.value = uiValue;
+	}
+	itd.infopanelloaded=true;
+	itd.itdCurrentLocation = "(InitializePageend-infopanelframe)";
+}
+
+var state = false; 
+function toggleGuess() 
+{
+	itd.itdCurrentLocation = "(toggleGuessbegin)";
+	//don't allow changing guess while in read only mode
+	var eFrame = itd.elementFrame();
+	if (!eFrame || eFrame.vReadOnlyMode)
+		return;
+
+	if(!state) {
+		//document.getElementById('guessoff').style.visibility = 'hidden';
+		//document.getElementById('guessoff2').style.visibility = 'hidden';
+		document.getElementById('goff').style.display = "none";
+		document.getElementById('gon').style.display = "block";
+		//document.getElementById('guessoff').style.display = 'none';
+		//document.getElementById('guessoff2').style.display = 'none';
+		itd.elementFrame().document.forms['ITD-ITEM'].elements['MarkPage'].value = "true";
+	} else {
+		//document.getElementById('guessoff').style.visibility = 'visible';
+		//document.getElementById('guessoff2').style.visibility = 'visible';
+		document.getElementById('gon').style.display = "none";
+		document.getElementById('goff').style.display = "block";
+		//document.getElementById('guessoff').style.display = 'inline';
+		//document.getElementById('guessoff2').style.display = 'inline';
+		itd.elementFrame().document.forms['ITD-ITEM'].elements['MarkPage'].value = "false";		
+	}
+	state = !state;
+	itd.itdCurrentLocation = "(toggleGuessend)";
+}
+
+function clearGuess() {
+	itd.itdCurrentLocation = "(clearGuessbegin)";
+	document.getElementById('goff').style.display = 'block';
+	document.getElementById('gon').style.display = 'none';	
+	//document.getElementById('guessoff').style.display = 'inline';
+	//document.getElementById('guessoff2').style.display = 'inline';
+	itd.elementFrame().document.forms['ITD-ITEM'].elements['MarkPage'].value = "false";
+	state = false;
+	itd.itdCurrentLocation = "(clearGuessend)";
+}
+function checkGuess() {
+	itd.itdCurrentLocation = "(checkGuessbegin)";
+	document.getElementById('gon').style.display = 'block';
+	document.getElementById('goff').style.display = 'none';
+	//document.getElementById('guessoff').style.display = 'none';
+	//document.getElementById('guessoff2').style.display = 'none';
+	itd.elementFrame().document.forms['ITD-ITEM'].elements['MarkPage'].value = "true";
+	state = true;
+	itd.itdCurrentLocation = "(checkGuessend)";
+}	
+
+function showGuess() {
+	itd.itdCurrentLocation = "(showGuessbegin)";
+	document.getElementById('GUESS2').style.visibility = 'visible';	
+	document.getElementById('GUESS3').style.visibility = 'hidden';
+	itd.itdCurrentLocation = "(showGuessend)";
+	//document.getElementById('GUESS2').style.display = 'inline';	
+	//document.getElementById('GUESS3').style.display = 'none';	
+}
+
+function hideGuess() {
+	itd.itdCurrentLocation = "(hideGuessbegin)";
+	document.getElementById('GUESS2').style.visibility = 'hidden';
+	document.getElementById('GUESS3').style.visibility = 'hidden';
+	itd.itdCurrentLocation = "(hideGuessend)";
+	//document.getElementById('GUESS2').style.display = 'none';
+	//document.getElementById('GUESS3').style.display = 'none';			
+}
+
+function hideGuess3() {
+	itd.itdCurrentLocation = "(hideGuess3begin)";
+	document.getElementById('GUESS2').style.visibility = 'hidden';	
+	document.getElementById('GUESS3').style.visibility = 'visible';
+	itd.itdCurrentLocation = "(hideGuess3end)";
+}
+
+var uiFilterToPerform = "";
+var waitingToFilter = false;
+var zoomMagnification = 1;
+var waitingToZoom = false;
+
+function performUIFilterChange() {
+	if( itd.itdLoadComplete ) {
+		itd.itdCurrentLocation = "(performUIFilterChangestart)";
+		itd.SetVariable("UIValue", uiFilterToPerform.toString());
+		itd.changeUIFilter(uiFilterToPerform);
+		waitingToFilter = false;
+	}
+	else {
+		window.setTimeout("performUIFilterChange()", 100);
+	}
+	itd.itdCurrentLocation = "(performUIFilterChangeend)";
+}
+function performZoomTest() {
+	if( itd.itdLoadComplete ) {
+		itd.itdCurrentLocation = "(performZoomTeststart)";
+		itd.zoomTest(zoomMagnification);
+		itd.SetVariable("ZoomValue", zoomMagnification.toString());
+		itd.zoomPopupOffset = zoomMagnification; //jwm
+		waitingToZoom = false;
+	}
+	else {
+		window.setTimeout("performZoomTest()", 100);
+	}
+	itd.itdCurrentLocation = "(performZoomTestend)";
+}
+function changeMyUIFilter(uiFilter) {
+	if( !itd.infopanelloaded )
+		return;
+	if( itd.itdLoadComplete) {
+		itd.itdCurrentLocation = "(changeMyUIFilterstart)";
+		uiFilterToPerform = uiFilter;
+		if( !waitingToFilter ) {
+			waitingToFilter = true;
+			performUIFilterChange();
+		}
+	}
+	else {
+		uiFilterToPerform = uiFilter;
+		if( !waitingToFilter ) {
+			waitingToFilter = true;
+			window.setTimeout("performUIFilterChange()", 100);
+		}
+	}
+	itd.itdCurrentLocation = "(changeMyUIFilterend)";
+}
+
+function zoomMyTest(magnification) {
+	if( !itd.infopanelloaded )
+		return;
+	if( itd.itdLoadComplete) {
+		itd.itdCurrentLocation = "(zoomMyTeststart)";
+		zoomMagnification = magnification;
+		if( !waitingToZoom ) {
+			waitingToZoom = true;
+			performZoomTest();
+		}
+	}
+	else {
+		zoomMagnification = magnification;
+		if( !waitingToZoom ) {
+			waitingToZoom = true;
+			window.setTimeout("performZoomTest()", 100);
+		}
+	}
+	itd.itdCurrentLocation = "(zoomMyTestend)";
+}
+</script>
+
+	
+	<script type="text/javascript">
+function liteInfo() {
+				itd.itdCurrentLocation = "(liteInfo start)";
+                document.getElementById('infotext').style.color = '#FFFF00';    
+                document.getElementById('flagon').style.display = 'inline';          
+                document.getElementById('flag').style.display = 'none';
+                itd.itdCurrentLocation = "(liteInfo end)";             
+}
+function unliteInfo() {
+	itd.itdCurrentLocation = "(unliteInfo start)";
+	document.getElementById('infotext').style.color = '#FFFFFF';	
+	document.getElementById('flagon').style.display = 'none';	
+	document.getElementById('flag').style.display = 'inline';
+	itd.itdCurrentLocation = "(unliteInfo end)";	
+}
+function liteTimer() {
+	itd.itdCurrentLocation = "(liteTimer start)";
+	document.getElementById('timertext').style.color = '#FFFF00';	
+	document.getElementById('clockon').style.display = 'inline';	
+	document.getElementById('clock').style.display = 'none';
+	itd.itdCurrentLocation = "(liteTimer end)";	
+}
+
+function unliteTimer() {
+	if(clockwarning) return;
+	itd.itdCurrentLocation = "(unliteTimer start)";
+	document.getElementById('timertext').style.color = '#FFFFFF';	
+	document.getElementById('clockon').style.display = 'none';	
+	document.getElementById('clock').style.display = 'inline';
+	itd.itdCurrentLocation = "(unliteTimer end)";
+}
+</script>
+
+	
+	<style>
+		BODY {background:#006daa}.MarkText {color:white;size:12pt;family:Arial}.TimeText {color:white}.InfoText {color:white}.CandidateText {color:white;font: 10pt arial}.TitleText {color:white;font:12pt arial}.MaxMessage {color:white;font:12pt arial}
+	</style>
+
+
+<script src="./jquery.waitforimages.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/jquery.waitforimages.js&#39;);"></script>
+<script type="text/javascript">if(typeof(itd.updateUI) == "function") itd.updateUI();</script>
+
+<script type="text/javascript">
+function PageLoadScript() {
+}</script></head>
+<body class="ITSDisplay" style="margin:0px;z-index:700" oncut="return false;" oncopy="return false;" onpaste="return false;" onload="vContentLoaded=true;if( typeof ITDFirstAction == &#39;function&#39; ) ITDFirstAction();">
+
+	
+	<table id="table_left" style="position:absolute;top:0px;left:0px;width:100%;z-index:1" width="100%" border="0" cellspacing="0" cellpadding="2">
+		<tbody><tr>
+			<td id="titletext" class="TitleText">Oracle Database 11g: Administration I&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="CandidateText">MUHAMMAD ENAYETUR RAHMAN</td>
+		</tr>
+	</tbody></table>
+	<table id="table_right" style="position:absolute;top:0px;left:0px;width:100%;z-index:2" width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td id="timerbox" style="padding-right:19px;padding-bottom:4px" align="right">
+			<div style="cursor:pointer;cursor:hand;width:350px" onclick="toggleTimer()" onmouseover="liteTimer()" onmouseout="unliteTimer()"><img id="clock" src="./itdmedia.aspx" height="20px" width="27px" align="absmiddle" border="0" onerror="return ITDImageError(this,0,decodeURIComponent(&#39;OracleTWReplacementUI%2Ftimeremaining.gif&#39;));" draggable="false" ondragstart="return false;" unselectable="on" style="visibility: hidden; display: inline;"><img id="clockon" src="./itdmedia(1).aspx" style="display: none; visibility: hidden;" height="20px" width="27px" align="absmiddle" border="0" onerror="return ITDImageError(this,1,decodeURIComponent(&#39;OracleTWReplacementUI%2Ftimeremainingover.gif&#39;));" draggable="false" ondragstart="return false;" unselectable="on"><span id="timertext" class="TimeText" style="visibility: hidden; color: rgb(255, 255, 255);"></span>&nbsp;</div>
+			</td>
+		</tr>
+		<tr>
+			<td id="infobox" style="padding-right:19px;padding-bottom:4px" align="right">
+			<div style="cursor:pointer;cursor:hand;width:125px" onclick="toggleInfo()" onmouseover="liteInfo()" onmouseout="unliteInfo()"><img id="flag" src="./itdmedia(2).aspx" height="18px" width="31px" align="top" border="0" onerror="return ITDImageError(this,2,decodeURIComponent(&#39;OracleTWReplacementUI%2Fprogressmin.gif&#39;));" draggable="false" ondragstart="return false;" unselectable="on" style="visibility: hidden; display: inline;"><img id="flagon" src="./itdmedia(3).aspx" style="display: none; visibility: hidden;" height="18px" width="31px" align="top" border="0" onerror="return ITDImageError(this,3,decodeURIComponent(&#39;OracleTWReplacementUI%2Fprogressminover.gif&#39;));" draggable="false" ondragstart="return false;" unselectable="on"><span id="infotext" class="InfoText" style="color: rgb(255, 255, 255);"></span>&nbsp;</div>
+			</td>
+		</tr>
+	</tbody></table>
+	<table style="position:absolute;top:47px;left:0px;width:100%;z-index:3" width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tbody><tr>
+			<td style="padding-right:19px;padding-left:0px;"><img src="./itdmedia(4).aspx" style="border-right:solid 2px white;border-bottom:solid 2px white;" height="36px" width="100%" onerror="return ITDImageError(this,4,decodeURIComponent(&#39;OracleTWReplacementUI%2Fbluebar.gif&#39;));" draggable="false" ondragstart="return false;" unselectable="on"></td>
+		</tr>
+	</tbody></table>
+	<div style="position:absolute;top:46px;left:0px;width:100%;z-index:3;">
+	<table width="100%">
+		<tbody><tr>
+			<td width="33%">&nbsp;</td>
+			<td width="33%" align="center">
+			<select id="ZoomCombo" onchange="zoomMyTest(this.value);" style="display:none;">
+			<option value="0.8">Smallest</option>
+			<option value="0.9">Smaller</option>
+			<option selected="" value="1.0">Normal</option>
+			<option value="1.1">Larger</option>
+			<option value="1.2">Largest</option>
+			</select>
+			</td>
+			<td width="33%" align="left">
+			<select id="UICombo" onchange="changeMyUIFilter(this.value);" style="display:none;">
+			<option selected="" value="Default">Normal Color Scheme</option>
+			<option value="BlackAndWhite">Black on White</option>
+			<option value="BlackAndLightYellow">Black on Light Yellow</option>
+			<option value="BlackAndYellow">Black on Yellow</option>
+			<option value="BlueAndWhite">Blue on White</option>
+			<option value="BlueAndYellow">Blue on Yellow</option>
+			<option value="WhiteAndBlack">White on Black</option>
+			<option value="LightYellowAndBlack">Light Yellow on Black</option>
+			<option value="YellowAndBlack">Yellow on Black</option>
+			<option value="YellowAndBlue">Yellow on Blue</option>
+			<option value="WhiteAndBlue">White on Blue</option>
+			</select>
+			</td>
+		</tr>
+	</tbody></table>
+	</div>
+	<div style="position:absolute;top:53px;left:10px;width:100%;z-index:3;" id="Name">
+	<table style="font:12pt arial;color:#ffffff" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tbody><tr>
+			<td id="itemname" style="font: 12pt arial;color:#ffffff"></td>
+			<td id="itemkey" style="font: 12pt arial;color:#ffffff"></td>
+		</tr>
+	</tbody></table>
+	</div>
+	<div style="position: absolute; top: 49px; left: 0px; width: 100%; z-index: 3; visibility: hidden;" id="GUESS2">
+	<table style="cursor:hand;cursor:pointer" border="0" cellspacing="0" cellpadding="0" align="right">
+		<tbody><tr>
+			<td onclick="toggleGuess()" valign="top">
+			<div id="goff" style="height:25px;width:34px;"><img id="guessoff" src="./itdmedia(5).aspx" height="25px" width="34px" border="0" onerror="return ITDImageError(this,5,decodeURIComponent(&#39;OracleTWReplacementUI%2Fflag2.gif&#39;));" draggable="false" ondragstart="return false;" unselectable="on"></div>
+			<div id="gon" style="display:none;height:25px"><img src="./itdmedia(6).aspx" height="25px" width="34px" border="0" onerror="return ITDImageError(this,6,decodeURIComponent(&#39;OracleTWReplacementUI%2Fflag-selected.gif&#39;));" draggable="false" ondragstart="return false;" unselectable="on"></div></td>
+		
+		
+		<td>&nbsp;&nbsp;</td>
+		<td class="MarkText" height="25px" width="40px">Mark</td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	</tr>
+</tbody></table>
+</div>
+<div style="position: absolute; top: 49px; left: 0px; width: 100%; z-index: 3; visibility: visible;" id="GUESS3">
+<table border="0" cellspacing="0" cellpadding="0" align="right">
+	<tbody><tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><img src="./itdmedia(7).aspx" height="25px" width="150px" border="0" onerror="return ITDImageError(this,7,decodeURIComponent(&#39;OracleTWReplacementUI%2Fbluebox2.gif&#39;));" draggable="false" ondragstart="return false;" unselectable="on"></td>
+		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	</tr>
+</tbody></table>
+</div>
+<div style="position:absolute;top:51px;left:10px;z-index:3;" id="Directions">
+<table style="font:12pt arial;color:#ffffff" border="0" cellspacing="0" cellpadding="0" align="left">
+	<tbody><tr>
+		<td class="MaxMessage" id="maxselectmessage"></td>
+	</tr>
+</tbody></table>
+</div>
+
+
+
+
+</body></html>

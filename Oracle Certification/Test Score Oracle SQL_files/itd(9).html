@@ -1,0 +1,319 @@
+
+<!-- saved from url=(0264)http://www.starttest.com/ITDVersions/11.3.0.0/itd.aspx?cmd=display&data=MTAyNjkxMjE0NywxMS4zLjAuMCwxNjMwODg2LDEwNCwyNDQxLEVOVSw3QTg3Q0Q0Ri1BMEYzLTQ5QzItQjZFNy0zMzhBMzYzMkE0RjUsLDAsMCwwLCwsMSwsLDA%3d-4KVKQ3esLDI%3d&language=ENU&urid=OracleIWReplacementUI/DonotAgree -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript">var vFailedScripts = new Array();</script>
+<script src="./jquery-1.12.3.min.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/jquery-1.12.3.min.js&#39;);"></script>
+<script src="./Prototypes.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/Prototypes.js&#39;);"></script>
+
+<script src="./FirstScripts.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/FirstScripts.js&#39;);"></script>
+<script type="text/javascript">
+var itd = null;
+function SetITDTop(checkWindow) {
+    if (typeof (checkWindow.itd) == "undefined" || checkWindow.itd == null) {
+        if (checkWindow != top) {
+            if (checkWindow.parent != null) {
+                if (typeof (checkWindow.parent.itd) == "undefined" || checkWindow.parent.itd == null)
+                    SetITDTop(checkWindow.parent);
+                checkWindow.itd = checkWindow.parent.itd;
+            }
+            else
+                checkWindow.itd = checkWindow;
+        }
+        else
+            checkWindow.itd = checkWindow;
+    }
+}
+if (window.opener == null || typeof (window.opener.itd) == "undefined")
+    SetITDTop(window);
+else
+    itd = window.opener.itd;
+function ITDDynamicOnLoad() { document.oncontextmenu = function () { try { if(typeof insertComment == 'function') insertComment(); } catch(e) {} return false;}
+ }</script>
+<script src="./Keyblock.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/Keyblock.js&#39;);"></script>
+<style>.ITSSeparator {
+	HTML: "
+
+<HR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+}
+
+.ITSMCOptionMarkerCell {padding-top: 4px;}
+
+P {
+	MARGIN: 0in 0in 0pt
+}
+BODY {
+	BACKGROUND-COLOR: #ffffff; MARGIN: 0.35in; FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 11pt; scrolltype: normal; scrolldisplay: auto
+}
+
+.shellFocus {
+	BORDER-BOTTOM: black 1px outset; BORDER-LEFT: black 1px outset; BORDER-TOP: black 1px outset; BORDER-RIGHT: black 1px outset
+}
+
+SELECT {}
+
+.zoomList {
+	WIDTH: 100px
+}
+
+.ITSStem {
+	MARGIN-BOTTOM: 30px; VERTICAL-ALIGN: top
+}
+.ITSStemSequence {
+	VERTICAL-ALIGN: top
+}
+.ITSMCOptionLabelText {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 15px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; labeling-scheme: Letter
+}
+.ITSMCOptionLabelTextOn {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 15px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; labeling-scheme: Letter
+}
+.ITSMCOptionLabelSeparator {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 15px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; label-separator: ")&nbsp;"
+}
+.ITSMCOptionLabelSeparatorOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 15px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; label-separator: ")&nbsp;"
+}
+.ITSMCOptionText {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ITSMCOptionTextOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ITSMCOptionTable {
+	PADDING-BOTTOM: 10pt; CURSOR: hand
+}
+.ITSMCOptionTableOn {
+	PADDING-BOTTOM: 10pt; CURSOR: hand
+}
+.ITSMCOptionMarker {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; option-selector: Circle; multiple-option-selector: Box
+}
+.ITSMCOptionMarkerOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; option-selector: Circle; multiple-option-selector: Box
+}
+.ITSMCRowOptionCell {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+.ITSMCRowOptionCellOn {
+	BORDER-BOTTOM: black solid; BORDER-LEFT: black solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: black solid; BORDER-RIGHT: black solid; PADDING-TOP: 0px
+}
+.ITSMCRowTextCell {
+	BORDER-BOTTOM: medium none; TEXT-ALIGN: center; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+.ITSPageLink {
+	COLOR: darkblue; CURSOR: hand; TEXT-DECORATION: underline
+}
+.ITSPassage {
+	BACKGROUND-COLOR: cornsilk; CURSOR: hand
+}
+.ITSAutoPassage {
+	COLOR: darkblue; FONT-WEIGHT: bold
+}
+.ITSGroupOption {
+	CURSOR: hand
+}
+.ITSGroupOptionOn {
+	BACKGROUND-COLOR: cornsilk; CURSOR: hand
+}
+.ITSLineNumber {
+	TEXT-ALIGN: right; line-numbering: 5
+}
+.ITSMatchingSource {
+	CURSOR: hand
+}
+.ITSMatchingSourceUsed {
+	COLOR: gray; CURSOR: hand
+}
+.ITSMatchingTarget {
+	BORDER-BOTTOM: thin ridge; TEXT-ALIGN: center; WIDTH: 1in; CURSOR: hand
+}
+.CSOLUTION {
+	BACKGROUND-COLOR: #ffffff; COLOR: #0000ff
+}
+.SOLUTION {
+	BACKGROUND-COLOR: #ffffff; COLOR: #0000ff
+}
+.ITSESOptionLabelText {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; labeling-scheme: None
+}
+.ITSESOptionLabelTextOn {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; labeling-scheme: None
+}
+.ITSESOptionLabelSeparator {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; label-separator: ""
+}
+.ITSESOptionLabelSeparatorOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ITSESOptionText {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.ITSESOptionTextOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ITSESOptionTable {
+	CURSOR: hand
+}
+.ITSESOptionTableOn {
+	CURSOR: hand
+}
+.ITSESOptionMarker {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; option-selector: circle; multiple-option-selector: Box
+}
+.ITSESOptionMarkerOn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.ITSU2Span {
+	BORDER-BOTTOM: #000 1px solid
+}
+.OracleCode {
+	FONT-FAMILY: "Courier New"; FONT-SIZE: 12pt
+}
+.itdstrikeout {
+	COLOR: #a6a6a6; TEXT-DECORATION: line-through
+}
+.itdstrikeout IMG {
+	FILTER: alpha(opacity=25); opacity: 0.25; -moz-opacity: 0.25
+}
+.itdstrikeout TD {
+	COLOR: #484848; TEXT-DECORATION: line-through
+}
+.itdstrikeout TABLE {
+	FILTER: alpha(opacity=39); opacity: 0.39; -moz-opacity: 0.39
+}
+.itdstrikeout SPAN {
+	FILTER: alpha(opacity=39); opacity: 0.39; -moz-opacity: 0.39
+}
+
+.TimeText {vertical-align:top;}
+
+.ITSMCOption {}
+body {background-color: white; color:black}
+.TD {color:black}
+
+
+
+
+
+
+
+
+
+
+.reviewtable {width:660px;background-color:#f7f1e5}</style>
+<style type="text/css">
+img {
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-user-drag: none;
+user-drag: none;
+}
+</style>
+<script type="text/javascript">var vErrorUrl = decodeURIComponent("https%3A%2F%2Fwsr.pearsonvue.com%2Fweb2JSP%2Fcore%2FlogError.jsp%3Ferror%3Dy");</script>
+<script src="./ForceClose.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/ForceClose.js&#39;);"></script>
+<script src="./Images.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/Images.js&#39;);"></script>
+<script src="./Display.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/Display.js&#39;);"></script>
+<script>var vItemType = 'Display';</script>
+<script src="./DisableHighlighting.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/DisableHighlighting.js&#39;);"></script>
+<script type="text/javascript">var searchMe='y';</script>
+
+
+
+	<title>Do Not Agree</title>
+	<style>
+		.fontcolor {COLOR:#003163}.buttonfontcolor {COLOR:#003163}
+	</style>
+
+	<script>
+	function closeTest() {
+		itd.itdCurrentLocation = "(closeTeststart)";
+		if( (itd.vCustomOptions & 1)  == 1) 
+			itd.navigateTD("MARKCOMPLETE");
+		else
+			itd.navigateTD('quit');
+		itd.itdCurrentLocation = "(closeTestend)";
+	}
+	</script>
+
+
+<script src="./jquery.waitforimages.js.download" type="text/javascript" onerror="vFailedScripts.push(&#39;scripts/jquery.waitforimages.js&#39;);"></script>
+<script type="text/javascript">if(typeof(itd.updateUI) == "function") itd.updateUI();</script>
+
+<script type="text/javascript">
+function PageLoadScript() {
+}</script></head>
+<body class="ITSDisplay" oncut="return false;" oncopy="return false;" onpaste="return false;" onload="vContentLoaded=true;if( typeof ITDFirstAction == &#39;function&#39; ) ITDFirstAction();">
+
+	<table width="70%" align="center" height="100%" valign="center">
+	<tbody>
+		<tr>
+			<td>
+			<table>
+			<tbody>
+				<tr>
+					<td>
+					<p class="fontcolor"><font style="FONT-SIZE: 12pt"><strong>You have selected “I Don't Agree” on the Non-Disclosure agreement. You cannot take the exam without agreeing to these terms.
+					<br>
+					<br>If you wish to see the terms again, <nobr>click “Return”.</nobr>
+					<br>
+					<br>If you do not agree with the terms and would like to end this exam, click “End” and the exam will close. If you end the exam, you will not be able to restart it and you will forfeit your exam fee.</strong></font>
+					<br>
+					<br></p><center>
+					<br>
+					<br>
+					<button onclick="closeTest();">
+						<p align="center" class="buttonfontcolor"><b><font style="FONT-SIZE: 12pt">End</font></b></p>
+					</button>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<button onclick="itd.toggleDoNotAgreeFrame();">
+						<p align="center" class="buttonfontcolor"><b><font style="FONT-SIZE: 12pt">Return</font></b></p>
+					</button>
+					</center>
+					<p></p>
+					</td>
+				</tr>
+			</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+
+
+
+
+</body></html>

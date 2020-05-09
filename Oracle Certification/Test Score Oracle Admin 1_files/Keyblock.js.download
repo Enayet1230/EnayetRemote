@@ -1,0 +1,1 @@
+function blockKeys(e){e=(e)?e:((event)?event:null);if(typeof itd.ITDKeyHandler!="\165ndefin\u0065d")return itd.ITDKeyHandler(e);}function resetLastActivity(e){if(typeof itd.ITDResetLastActivity!="un\u0064\u0065\u0066ined")return itd.ITDResetLastActivity();}

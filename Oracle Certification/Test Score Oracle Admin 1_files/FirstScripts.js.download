@@ -1,0 +1,1 @@
+﻿$(document).ready(function () { if (typeof itdtabAutomaticOnLoad == 'function') itdtabAutomaticOnLoad() });
